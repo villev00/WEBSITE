@@ -3,20 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ville Varhala | Game Developer Portfolio</title>
+    <title>Ville Varhala | Unity Game Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Rajdhani:wght@400;500;600;700&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="logo" href="#top">VV</a>
+      <a class="logo" href="#top" aria-label="Ville Varhala home">VV</a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -25,14 +26,14 @@
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Game Developer / Unity / VR-XR</p>
+          <p class="eyebrow">Unity Game Developer / VR / WebGL</p>
           <h1>Ville Varhala</h1>
           <p class="hero-text">
-            Game developer at Raikiri working with Unity, VR/XR development,
-            shaders, and UI implementation.
+            I build gameplay systems, UI, shaders, combat features, and polished
+            player experiences for Unity games, with shipped VR and WebGL work.
           </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects">View JUST ONE MAN</a>
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="button primary" href="#work">View Work</a>
             <a
               class="button secondary"
               href="https://www.linkedin.com/in/ville-varhala-317036258/"
@@ -40,48 +41,80 @@
               rel="noopener noreferrer"
               >LinkedIn</a
             >
+            <a class="button secondary" href="mailto:vtooldevmail@gmail.com"
+              >vtooldevmail@gmail.com</a
+            >
           </div>
         </div>
 
-        <aside class="status-panel" aria-label="Developer profile summary">
-          <div class="panel-row">
-            <span>Engine</span>
-            <strong>Unity</strong>
-          </div>
-          <div class="panel-row">
-            <span>Current</span>
+        <aside class="hero-visual" aria-label="Developer profile snapshot">
+          <div class="screen-topline">
+            <span>Current Build</span>
             <strong>Raikiri</strong>
           </div>
-          <div class="panel-row">
-            <span>Focus</span>
-            <strong>VR/XR</strong>
+          <div class="build-card">
+            <span class="card-kicker">Released VR Title</span>
+            <strong>JUST ONE MAN</strong>
+            <p>Gameplay, combat, UI, shaders, enemies, endless mode, scoring</p>
           </div>
-          <div class="panel-row">
-            <span>Visuals</span>
-            <strong>Shaders</strong>
+          <div class="build-metrics" aria-label="Project highlights">
+            <div>
+              <span>12K+</span>
+              <p>SideQuest demo downloads</p>
+            </div>
+            <div>
+              <span>#1</span>
+              <p>Combat game spot for over a month</p>
+            </div>
+            <div>
+              <span>Solo</span>
+              <p>Primary programmer on Energy Audit</p>
+            </div>
           </div>
         </aside>
       </section>
 
-      <section class="section-block" id="projects">
+      <section class="intro-section section-block" aria-label="Profile summary">
+        <div>
+          <p class="eyebrow">Profile</p>
+          <h2>Shipped Unity developer with a hands-on gameplay focus.</h2>
+        </div>
+        <p>
+          My work sits where player feel, technical implementation, and visual
+          polish meet. I enjoy prototyping new ideas, tuning interaction flow,
+          debugging hard problems, and turning rough systems into finished game
+          features across VR, mobile, and browser-playable Unity projects.
+        </p>
+      </section>
+
+      <section class="section-block" id="work">
         <div class="section-heading">
-          <p class="eyebrow">Selected Work</p>
-          <h2>Featured Projects</h2>
+          <div>
+            <p class="eyebrow">Selected Work</p>
+            <h2>Projects with shipped and playable outcomes.</h2>
+          </div>
         </div>
 
         <div class="project-grid">
           <article class="project-card featured-project">
+            <div class="project-marker" aria-hidden="true">
+              <span>VR</span>
+              <span>01</span>
+            </div>
             <div class="project-content">
-              <p class="project-tag">Featured Work / Raikiri</p>
+              <p class="project-tag">Raikiri / Steam + Meta Quest</p>
               <h3>JUST ONE MAN</h3>
               <p>
-                Full-time game development work at Raikiri, contributing to a
-                VR title available on Steam and Meta Quest.
+                Developer on Raikiri's released VR hack-and-slash game. I
+                contributed across gameplay, combat systems, UI, shaders,
+                tutorials, enemies, endless mode, scoring, skins, shop features,
+                Unity Cloud leaderboards, and Steam/Quest authentication.
               </p>
               <div class="project-meta">
-                <span>Game Developer</span>
                 <span>Apr 2025 - Present</span>
-                <span>Unity / VR</span>
+                <span>Released VR</span>
+                <span>Unity Cloud</span>
+                <span>Steam / Quest auth</span>
               </div>
               <div class="project-links">
                 <a
@@ -103,16 +136,22 @@
           </article>
 
           <article class="project-card">
+            <div class="project-marker" aria-hidden="true">
+              <span>WebGL</span>
+              <span>02</span>
+            </div>
             <div class="project-content">
-              <p class="project-tag">XR Internship</p>
+              <p class="project-tag">Helsinki XR Center / SKILLBILL</p>
               <h3>Energy Audit</h3>
               <p>
-                Unity/XR development work connected to Helsinki XR Center and
-                Metropolia's Energy Audit project.
+                Sole primary programmer for a browser-playable mobile
+                educational game built with Unity. Owned gameplay programming,
+                UI logic, interaction flow, WebGL deployment requirements,
+                debugging, and documentation.
               </p>
               <div class="project-meta compact">
-                <span>Helsinki XR Center</span>
                 <span>Sep 2023 - May 2024</span>
+                <span>Published project</span>
               </div>
               <div class="project-links">
                 <a
@@ -127,12 +166,36 @@
           </article>
 
           <article class="project-card">
+            <div class="project-marker" aria-hidden="true">
+              <span>2D</span>
+              <span>03</span>
+            </div>
             <div class="project-content">
-              <p class="project-tag">Game Jam + School Projects</p>
-              <h3>Itch.io Projects</h3>
+              <p class="project-tag">Underdog Playhouse</p>
+              <h3>Walk the Dog on Paper</h3>
               <p>
-                A collection of game jam work, school projects, and playable
-                builds published on Itch.io.
+                Volunteer Unity development for a 2D retro-style action
+                RPG/rampage runner, contributing UI, shaders, gameplay logic,
+                and scripts.
+              </p>
+              <div class="project-meta compact">
+                <span>Jan 2025 - Apr 2025</span>
+                <span>Volunteer game dev</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-marker" aria-hidden="true">
+              <span>Other</span>
+              <span>04</span>
+            </div>
+            <div class="project-content">
+              <p class="project-tag">Other Projects</p>
+              <h3>Playable Experiments</h3>
+              <p>
+                Small playable builds, school projects, and fast prototypes
+                published across Itch.io and Global Game Jam.
               </p>
               <div class="project-links">
                 <a
@@ -140,28 +203,70 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Open Ville Varhala Itch.io projects"
-                  >Open Itch.io</a
+                  >Itch.io</a
                 >
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-content">
-              <p class="project-tag">Game Jam</p>
-              <h3>FGJ26 Video Peli 2</h3>
-              <p>
-                A Global Game Jam 2026 project made during FGJ26.
-              </p>
-              <div class="project-links">
                 <a
                   href="https://globalgamejam.org/games/2026/fgj26-video-peli-2"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Open FGJ26 Video Peli 2 on Global Game Jam"
-                  >Open GGJ</a
+                  >FGJ26</a
                 >
               </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block" id="experience">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Experience</p>
+            <h2>Game development, XR, and community work.</h2>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article>
+            <span class="timeline-date">Apr 2025 - Present</span>
+            <div>
+              <h3>Game Developer, Raikiri</h3>
+              <p>
+                Shipped feature work for JUST ONE MAN, including combat-facing
+                systems, onboarding, progression-adjacent features, platform
+                services, and post-feedback polish.
+              </p>
+            </div>
+          </article>
+          <article>
+            <span class="timeline-date">Jan 2025 - Apr 2025</span>
+            <div>
+              <h3>Game Developer, Underdog Playhouse</h3>
+              <p>
+                Built and refined Unity UI, shaders, gameplay logic, and scripts
+                for Walk the Dog on Paper as a volunteer developer.
+              </p>
+            </div>
+          </article>
+          <article>
+            <span class="timeline-date">Sep 2023 - May 2024</span>
+            <div>
+              <h3>Unity Developer Intern, Helsinki XR Center</h3>
+              <p>
+                Worked on the EU Horizon Europe-funded SKILLBILL project and
+                helped publish Energy Audit in collaboration with artists and a
+                lead developer.
+              </p>
+            </div>
+          </article>
+          <article>
+            <span class="timeline-date">Jan 2023 - May 2025</span>
+            <div>
+              <h3>Volunteer, IGDA Finland Events</h3>
+              <p>
+                Supported Finnish Game Awards and other IGDA Finland events with
+                setup, logistics, attendee guidance, and on-site coordination.
+              </p>
             </div>
           </article>
         </div>
@@ -169,44 +274,90 @@
 
       <section class="section-block split-section" id="skills">
         <div>
-          <p class="eyebrow">Core Skills</p>
-          <h2>Technical Profile</h2>
+          <p class="eyebrow">Technical Loadout</p>
+          <h2>Skills grouped by how they show up in real projects.</h2>
         </div>
-        <div class="skill-list">
-          <span>Unity</span>
-          <span>VR Interaction</span>
-          <span>C# Gameplay</span>
-          <span>Shader Graph</span>
-          <span>HLSL</span>
-          <span>UI Implementation</span>
-          <span>Optimization</span>
-        </div>
-        <div class="experience-list" aria-label="Experience from CV">
+        <div class="skill-groups">
           <article>
-            <span>Raikiri</span>
-            <p>Game Developer, full-time, Apr 2025 - Present</p>
+            <h3>Game Engines</h3>
+            <div class="skill-list">
+              <span>Unity</span>
+              <span>Shader Graph</span>
+              <span>WebGL</span>
+            </div>
           </article>
           <article>
-            <span>Helsinki XR Center</span>
-            <p>Unity Developer internship, Sep 2023 - May 2024</p>
+            <h3>Programming</h3>
+            <div class="skill-list">
+              <span>C#</span>
+              <span>Gameplay systems</span>
+              <span>UI systems</span>
+              <span>Tools</span>
+              <span>Debugging</span>
+            </div>
           </article>
           <article>
-            <span>Underdog Playhouse</span>
-            <p>Volunteer Game Developer, Jan 2025 - Apr 2025</p>
+            <h3>XR / Platforms</h3>
+            <div class="skill-list">
+              <span>OpenXR</span>
+              <span>XR interaction systems</span>
+              <span>VR combat</span>
+              <span>VR/Mobile optimization</span>
+              <span>Steam</span>
+              <span>Meta Quest</span>
+              <span>Unity Cloud</span>
+              <span>Leaderboards</span>
+            </div>
+          </article>
+          <article>
+            <h3>Workflow</h3>
+            <div class="skill-list">
+              <span>Git</span>
+              <span>Profiling</span>
+              <span>Optimization</span>
+              <span>Documentation</span>
+              <span>GitHub Copilot</span>
+              <span>ChatGPT / Codex</span>
+            </div>
           </article>
         </div>
       </section>
 
+      <section class="section-block details-section">
+        <article>
+          <p class="eyebrow">Education</p>
+          <h2>Bachelor of Engineering</h2>
+          <p>
+            Major in Game Applications at Metropolia University of Applied
+            Sciences, Espoo.
+          </p>
+          <span class="detail-date">2021 - 2025</span>
+        </article>
+        <article>
+          <p class="eyebrow">Languages</p>
+          <h2>Finnish + English</h2>
+          <p>
+            Comfortable collaborating in Finnish and English across development,
+            documentation, and event environments.
+          </p>
+        </article>
+      </section>
+
       <section class="section-block contact-panel" id="contact">
-        <p class="eyebrow">Contact</p>
-        <h2>Reach me on LinkedIn for now.</h2>
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let us talk about Unity, VR, WebGL, or game feel.</h2>
+        </div>
         <div class="contact-details">
+          <a class="button primary" href="mailto:vtooldevmail@gmail.com"
+            >vtooldevmail@gmail.com</a
+          >
           <a
-            class="button primary"
+            class="button secondary"
             href="https://www.linkedin.com/in/ville-varhala-317036258/"
             target="_blank"
             rel="noopener noreferrer"
-            >Contact on LinkedIn</a
+            >LinkedIn</a
           >
         </div>
       </section>
