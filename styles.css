@@ -10,6 +10,7 @@
   --amber: #ffc857;
   --coral: #ff6b6b;
   --shadow: rgba(0, 0, 0, 0.38);
+  --header-offset: 88px;
 }
 
 * {
@@ -18,6 +19,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: calc(var(--header-offset) + 18px);
 }
 
 body {
@@ -103,8 +108,13 @@ h3,
 }
 
 .nav-links a:hover,
-.nav-links a:focus {
+.nav-links a:focus,
+.nav-links a.is-active {
   color: var(--green);
+}
+
+.nav-links a.is-active {
+  text-shadow: 0 0 14px rgba(158, 255, 106, 0.72);
 }
 
 main {
