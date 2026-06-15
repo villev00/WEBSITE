@@ -4,6 +4,7 @@ const hashLinks = Array.from(document.querySelectorAll("a[href^='#']"));
 const sectionTargets = navLinks
   .map((link) => document.getElementById(link.hash.slice(1)))
   .filter(Boolean);
+const revealTargets = Array.from(document.querySelectorAll(".section-reveal"));
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 let ticking = false;
@@ -118,4 +119,27 @@ window.addEventListener("load", () => {
 
 if ("ResizeObserver" in window && header) {
   new ResizeObserver(requestActiveUpdate).observe(header);
+}
+
+if (revealTargets.length) {
+  if (reducedMotion.matches || !("IntersectionObserver" in window)) {
+    revealTargets.forEach((target) => target.classList.add("is-visible"));
+  } else {
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        rootMargin: "0px 0px -12% 0px",
+        threshold: 0.16
+      }
+    );
+
+    revealTargets.forEach((target) => revealObserver.observe(target));
+  }
 }

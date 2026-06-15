@@ -4,37 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ville Varhala | Unity Game Developer</title>
+    <meta
+      name="description"
+      content="Ville Varhala is a Unity game developer focused on VR, gameplay systems, UI, shaders, WebGL, and polished player experiences."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Rajdhani:wght@400;500;600;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260601" />
-    <script src="script.js?v=20260601" defer="defer"></script>
+    <link rel="stylesheet" href="styles.css?v=20260615-green2" />
+    <script src="script.js?v=20260615-green" defer="defer"></script>
   </head>
   <body>
+    <a class="skip-link" href="#work">Skip to work</a>
+
     <header class="site-header">
-      <a class="logo" href="#top" aria-label="Ville Varhala home">VV</a>
+      <a class="logo" href="#home" aria-label="Ville Varhala home">
+        <span>Ville Varhala</span>
+        <strong>Unity Game Developer</strong>
+      </a>
       <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#home">Home</a>
         <a href="#work">Work</a>
         <a href="#experience">Experience</a>
+        <a href="#thesis">Thesis</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero">
+      <section class="hero section-reveal" id="home" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow">Unity Game Developer / VR / WebGL</p>
-          <h1>Ville Varhala</h1>
+          <h1 id="hero-title">Ville Varhala</h1>
           <p class="hero-text">
-            I build gameplay systems, UI, shaders, combat features, and polished
-            player experiences for Unity games, with shipped VR and WebGL work.
+            I’m an Unity Game Developer with shipped VR and WebGL
+experience. I enjoy building gameplay systems, UI, shaders and just
+overall cool player experiences, while also dipping head into
+optimization and prototyping new things. I’ve contributed to a
+released VR title and worked as the sole primary programmer on
+an EU-funded WebGL educational game project.
           </p>
           <div class="hero-actions" aria-label="Primary links">
-            <a class="button primary" href="#work">View Work</a>
+            <a class="button primary" href="#work">View work</a>
+            <a class="button secondary" href="#contact">Contact</a>
             <a
               class="button secondary"
               href="https://www.linkedin.com/in/ville-varhala-317036258/"
@@ -42,106 +58,219 @@
               rel="noopener noreferrer"
               >LinkedIn</a
             >
-            <a class="button secondary" href="mailto:vtooldevmail@gmail.com"
-              >vtooldevmail@gmail.com</a
-            >
           </div>
+
         </div>
 
-        <aside class="hero-visual" aria-label="Developer profile snapshot">
-          <div class="screen-topline">
-            <span>Current Build</span>
+        <aside class="home-panel" aria-label="Profile highlights">
+          <div class="raikiri-brand" aria-label="Raikiri">
+            <span class="raikiri-mark" aria-hidden="true"></span>
             <strong>Raikiri</strong>
           </div>
-          <div class="build-card">
-            <span class="card-kicker">Released VR Title</span>
-            <strong>JUST ONE MAN</strong>
-            <p>Gameplay, combat, UI, shaders, enemies, endless mode, scoring</p>
-          </div>
-          <div class="build-metrics" aria-label="Project highlights">
-            <div>
+          <p class="panel-kicker">Latest Project</p>
+          <h2>JUST ONE MAN</h2>
+          <p>
+            Released Meta Quest and Steam VR combat game with contributions
+            across gameplay, UI, shaders, enemies, endless mode, scoring,
+            leaderboards, and platform authentication.
+          </p>
+          <div class="highlight-metrics" aria-label="JUST ONE MAN highlights">
+            <article>
               <span>12K+</span>
               <p>SideQuest demo downloads</p>
-            </div>
-            <div>
+            </article>
+            <article>
               <span>#1</span>
-              <p>Combat game spot for over a month</p>
-            </div>
-            <div>
-              <span>Solo</span>
-              <p>Primary programmer on Energy Audit</p>
-            </div>
+              <p>VR combat spot for over a month</p>
+            </article>
+            <article>
+              <span>VR</span>
+              <p>Released on Meta Quest and Steam</p>
+            </article>
           </div>
         </aside>
       </section>
 
-      <section class="intro-section section-block" aria-label="Profile summary">
-        <div>
-          <p class="eyebrow">Profile</p>
-          <h2>Shipped Unity developer with a hands-on gameplay focus.</h2>
-        </div>
-        <p>
-          My work sits where player feel, technical implementation, and visual
-          polish meet. I enjoy prototyping new ideas, tuning interaction flow,
-          debugging hard problems, and turning rough systems into finished game
-          features across VR, mobile, and browser-playable Unity projects.
-        </p>
-      </section>
-
-      <section class="section-block" id="work">
+      <section class="section-block section-reveal" id="work">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Selected Work</p>
-            <h2>Projects with shipped and playable outcomes.</h2>
+            <p class="eyebrow">Selected work</p>
+            <h2>Projects, trailers, and playable links.</h2>
           </div>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card featured-project">
-            <div class="project-marker" aria-hidden="true">
-              <span>VR</span>
-              <span>01</span>
+        <article class="project-card project-feature">
+          <div class="project-copy">
+            <p class="project-tag">Released VR Title</p>
+            <h3>JUST ONE MAN</h3>
+            <p>
+              Released VR hack-and-slash combat game and the main current
+              portfolio highlight. My contributions span gameplay,
+              combat-facing systems, onboarding, UI, shaders, enemies, endless
+              mode, scoring, skins, shop work, Unity Cloud leaderboards, and
+                Quest/Steam authentication + much more.
+            </p>
+            <div class="project-meta">
+              <span>Apr 2025 - Present</span>
+              <span>Released VR</span>
             </div>
-            <div class="project-content">
-              <p class="project-tag">Raikiri / Steam + Meta Quest</p>
-              <h3>JUST ONE MAN</h3>
+            <div class="project-links">
+              <a
+                href="https://www.meta.com/en-gb/experiences/just-one-man/8802299089893750/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open JUST ONE MAN on Meta Quest"
+                >Meta Quest</a
+              >
+              <a
+                href="https://store.steampowered.com/app/4184860/JUST_ONE_MAN/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open JUST ONE MAN on Steam"
+                >Steam</a
+              >
+            </div>
+          </div>
+          <div class="project-media" id="just-one-man-trailer">
+            <img
+              class="feature-image"
+              src="assets/images/just-one-man.jpg"
+              alt="JUST ONE MAN key art with samurai combat characters."
+              loading="lazy"
+            />
+            <div class="video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/YhZOrpJvXsE?rel=0&amp;modestbranding=1"
+                title="JUST ONE MAN game trailer"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </article>
+
+        <div class="work-links" aria-label="Project profile links">
+          <a
+            href="https://ville-varhala.itch.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Itch.io profile</a
+          >
+          <a
+            href="https://globalgamejam.org/users/villev00"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Finnish Game Jam profile</a
+          >
+        </div>
+
+        <div class="media-grid">
+          <article class="project-card media-card">
+            <div class="project-copy">
+              <p class="project-tag">Finnish Game Jam highlight</p>
+              <h3>Pacific Party</h3>
+              <div class="video-frame">
+                <iframe
+                  src="https://www.youtube.com/embed/HFTVxOd8Bew?rel=0&amp;modestbranding=1"
+                  title="Pacific Party Finnish Game Jam video"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
               <p>
-                Developer on Raikiri's released VR hack-and-slash game. I
-                contributed across gameplay, combat systems, UI, shaders,
-                tutorials, enemies, endless mode, scoring, skins, shop features,
-                Unity Cloud leaderboards, and Steam/Quest authentication.
+                Fun little GGJ-25 game project. Where I was in charge of player movement, shaders like fullscreen shaders and effects + post processing.
               </p>
-              <div class="project-meta">
-                <span>Apr 2025 - Present</span>
-                <span>Released VR</span>
-                <span>Unity Cloud</span>
-                <span>Steam / Quest auth</span>
+              <div class="project-meta compact">
+                <span>Game jam</span>
+                <span>2025</span>
               </div>
               <div class="project-links">
                 <a
-                  href="https://store.steampowered.com/app/4184860/JUST_ONE_MAN/"
+                  href="https://justmars.itch.io/party-in-the-pacific"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Open JUST ONE MAN on Steam"
-                  >Steam</a
-                >
-                <a
-                  href="https://www.meta.com/en-gb/experiences/just-one-man/8802299089893750/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open JUST ONE MAN on Meta Quest"
-                  >Meta Quest</a
+                  aria-label="Open Pacific Party on Itch.io"
+                  >Itch.io</a
                 >
               </div>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-marker" aria-hidden="true">
-              <span>WebGL</span>
-              <span>02</span>
+          <article class="project-card media-card">
+            <div class="project-copy">
+              <p class="project-tag">Itch.io highlight</p>
+              <h3>Elements of Chaos</h3>
+              <div class="video-frame">
+                <iframe
+                  src="https://www.youtube.com/embed/4jlfrjV5Xnw?rel=0&amp;modestbranding=1"
+                  title="Elements of Chaos project video"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p>
+                First bigger Unity project, a 3D arena multiplayer puzzle shooter, where I was responsible for enemy and boss AI and level building.
+              </p>
+              <div class="project-meta compact">
+                <span>Unity</span>
+                <span>Student project</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://ville-varhala.itch.io/elements-of-chaos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Elements of Chaos on Itch.io"
+                  >Itch.io</a
+                >
+              </div>
             </div>
-            <div class="project-content">
+          </article>
+        </div>
+
+        <div class="supporting-grid">
+          <article class="project-card support-card">
+            <img
+              class="support-image"
+              src="assets/images/walk-the-dog.jpg"
+              alt="Walk the Dog on Paper gameplay with a helicopter, street, and store interior."
+              loading="lazy"
+            />
+            <div class="project-copy">
+              <p class="project-tag">Underdog Playhouse</p>
+              <h3>Walk the Dog on Paper</h3>
+              <p>
+                Volunteer Unity development for a 2D retro-style action
+                RPG/rampage runner, contributing UI, shaders, gameplay logic,
+                and scripts.
+              </p>
+              <div class="project-meta compact">
+                <span>Jan 2025 - Apr 2025</span>
+                <span>Volunteer game dev</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://store.steampowered.com/app/3768670/Walk_the_Dog_on_Paper/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Walk the Dog on Paper on Steam"
+                  >Steam</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card support-card">
+            <img
+              class="support-image energy-image"
+              src="assets/images/energy-audit.png"
+              alt="Energy Audit gameplay scene in an office reception with dialogue UI."
+              loading="lazy"
+            />
+            <div class="project-copy">
               <p class="project-tag">Helsinki XR Center / SKILLBILL</p>
               <h3>Energy Audit</h3>
               <p>
@@ -160,152 +289,135 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Open Energy Audit project"
-                  >Open Project</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-marker" aria-hidden="true">
-              <span>2D</span>
-              <span>03</span>
-            </div>
-            <div class="project-content">
-              <p class="project-tag">Underdog Playhouse</p>
-              <h3>Walk the Dog on Paper</h3>
-              <p>
-                Volunteer Unity development for a 2D retro-style action
-                RPG/rampage runner, contributing UI, shaders, gameplay logic,
-                and scripts.
-              </p>
-              <div class="project-meta compact">
-                <span>Jan 2025 - Apr 2025</span>
-                <span>Volunteer game dev</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-marker" aria-hidden="true">
-              <span>Other</span>
-              <span>04</span>
-            </div>
-            <div class="project-content">
-              <p class="project-tag">Other Projects</p>
-              <h3>Playable Experiments</h3>
-              <p>
-                Small playable builds, school projects, and fast prototypes
-                published across Itch.io and Global Game Jam.
-              </p>
-              <div class="project-links">
-                <a
-                  href="https://ville-varhala.itch.io/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Ville Varhala Itch.io projects"
-                  >Itch.io</a
-                >
-                <a
-                  href="https://globalgamejam.org/games/2026/fgj26-video-peli-2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open FGJ26 Video Peli 2 on Global Game Jam"
-                  >FGJ26</a
+                  >Open project</a
                 >
               </div>
             </div>
           </article>
         </div>
+
+        <div class="experience-compact" id="experience">
+          <div>
+            <p class="eyebrow">Experience context</p>
+            <h2>Roles tied directly to the projects above.</h2>
+          </div>
+          <div class="mini-timeline">
+            <article>
+              <span>Apr 2025 - Present</span>
+              <strong>Game Developer, Raikiri</strong>
+              <p>JUST ONE MAN feature work, platform services, and polish.</p>
+            </article>
+            <article>
+              <span>Jan 2025 - Apr 2025</span>
+              <strong>Game Developer, Underdog Playhouse</strong>
+              <p>Unity UI, shaders, gameplay logic, and scripts.</p>
+            </article>
+            <article>
+              <span>Sep 2023 - May 2024</span>
+              <strong>Unity Developer Intern, Helsinki XR Center</strong>
+              <p>Energy Audit gameplay programming, WebGL flow, and documentation.</p>
+            </article>
+            <article>
+              <span>Jan 2023 - May 2025</span>
+              <strong>Volunteer, IGDA Finland Events</strong>
+              <p>Event setup, logistics, attendee guidance, and coordination.</p>
+            </article>
+          </div>
+        </div>
       </section>
 
-      <section class="section-block" id="experience">
+      <section class="section-block thesis-section section-reveal" id="thesis">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Experience</p>
-            <h2>Game development, XR, and community work.</h2>
+            <p class="eyebrow">Bachelor's thesis</p>
+            <h2>Real-time Simulation of Seasons in Unity.</h2>
           </div>
         </div>
 
-        <div class="timeline">
-          <article>
-            <span class="timeline-date">Apr 2025 - Present</span>
-            <div>
-              <h3>Game Developer, Raikiri</h3>
-              <p>
-                Shipped feature work for JUST ONE MAN, including combat-facing
-                systems, onboarding, progression-adjacent features, platform
-                services, and post-feedback polish.
-              </p>
+        <div class="thesis-layout">
+          <figure class="season-showcase">
+            <img
+              src="assets/images/four-seasons.png"
+              alt="Four Unity environment screenshots showing seasonal variations of the same forest scene."
+              loading="lazy"
+            />
+            <figcaption>
+              Same Unity scene driven through spring, summer, autumn, and winter
+              visual states.
+            </figcaption>
+          </figure>
+
+          <article class="thesis-copy">
+            <p class="project-tag">Metropolia University of Applied Sciences / 2025</p>
+            <h3>Real-time Simulation of Seasons in Unity</h3>
+            <p>
+              Built a scalable Unity prototype that adapts scene visuals from
+              the user's location and current date. IPInfo handled location,
+              OpenWeather supplied weather data, and Shader Graph parameters
+              drove vegetation color, transparency, and winter coverage.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://www.theseus.fi/handle/10024/891372"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Theseus</a
+              >
+              <a
+                href="https://urn.fi/URN:NBN:fi:amk-2025052817600"
+                target="_blank"
+                rel="noopener noreferrer"
+                >URN</a
+              >
             </div>
           </article>
-          <article>
-            <span class="timeline-date">Jan 2025 - Apr 2025</span>
-            <div>
-              <h3>Game Developer, Underdog Playhouse</h3>
-              <p>
-                Built and refined Unity UI, shaders, gameplay logic, and scripts
-                for Walk the Dog on Paper as a volunteer developer.
-              </p>
-            </div>
-          </article>
-          <article>
-            <span class="timeline-date">Sep 2023 - May 2024</span>
-            <div>
-              <h3>Unity Developer Intern, Helsinki XR Center</h3>
-              <p>
-                Worked on the EU Horizon Europe-funded SKILLBILL project and
-                helped publish Energy Audit in collaboration with artists and a
-                lead developer.
-              </p>
-            </div>
-          </article>
-          <article>
-            <span class="timeline-date">Jan 2023 - May 2025</span>
-            <div>
-              <h3>Volunteer, IGDA Finland Events</h3>
-              <p>
-                Supported Finnish Game Awards and other IGDA Finland events with
-                setup, logistics, attendee guidance, and on-site coordination.
-              </p>
-            </div>
-          </article>
+        </div>
+
+        <div class="thesis-demo">
+          <div>
+            <p class="eyebrow">Prototype video</p>
+            <h3>Season transition demo</h3>
+          </div>
+          <video controls preload="metadata" poster="assets/images/four-seasons.png">
+            <source src="assets/videos/seasons-demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </section>
 
-      <section class="section-block split-section" id="skills">
+      <section class="section-block split-section section-reveal" id="skills">
         <div>
-          <p class="eyebrow">Technical Loadout</p>
-          <h2>Skills grouped by how they show up in real projects.</h2>
+          <p class="eyebrow">Technical loadout</p>
+          <h2>Some skill highlights.</h2>
         </div>
         <div class="skill-groups">
           <article>
-            <h3>Game Engines</h3>
+            <h3>Engine</h3>
             <div class="skill-list">
               <span>Unity</span>
-              <span>Shader Graph</span>
-              <span>WebGL</span>
             </div>
           </article>
           <article>
-            <h3>Programming</h3>
+            <h3>Programming / Rendering</h3>
             <div class="skill-list">
               <span>C#</span>
               <span>Gameplay systems</span>
               <span>UI systems</span>
+              <span>Shader Graph</span>
               <span>Tools</span>
               <span>Debugging</span>
             </div>
           </article>
           <article>
-            <h3>XR / Platforms</h3>
+            <h3>XR / Platforms / Services</h3>
             <div class="skill-list">
               <span>OpenXR</span>
               <span>XR interaction systems</span>
               <span>VR combat</span>
               <span>VR/Mobile optimization</span>
-              <span>Steam</span>
+              <span>WebGL</span>
               <span>Meta Quest</span>
+              <span>Steam</span>
               <span>Unity Cloud</span>
               <span>Leaderboards</span>
             </div>
@@ -324,7 +436,7 @@
         </div>
       </section>
 
-      <section class="section-block details-section">
+      <section class="section-block details-section section-reveal">
         <article>
           <p class="eyebrow">Education</p>
           <h2>Bachelor of Engineering</h2>
@@ -344,7 +456,7 @@
         </article>
       </section>
 
-      <section class="section-block contact-panel" id="contact">
+      <section class="section-block contact-panel section-reveal" id="contact">
         <div>
           <p class="eyebrow">Contact</p>
           <h2>Let us talk about Unity, VR, WebGL, or game feel.</h2>
